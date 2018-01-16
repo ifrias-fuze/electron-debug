@@ -1,14 +1,21 @@
 {
-	"name": "electron-debug",
-	"version": "1.5.0",
+	"name": "@soleng-fuze/electron-debug",
+	"version": "1.5.1",
 	"description": "Adds useful debug features to your Electron app",
 	"license": "MIT",
-	"repository": "sindresorhus/electron-debug",
+	"repository": "ifrias-fuze/electron-debug",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
 		"url": "sindresorhus.com"
 	},
+	"contributors": [
+		{
+			"name": "Ivan Frias",
+			"email": "ifrias@fuze.com",
+			"url": "https://ivanfrias.github.io/presentation/"
+		}
+	],
 	"scripts": {
 		"start": "electron test.js",
 		"test": "xo"
