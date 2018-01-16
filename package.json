@@ -1,7 +1,7 @@
 {
 	"name": "@soleng-fuze/electron-debug",
 	"version": "1.5.1",
-	"description": "Adds useful debug features to your Electron app",
+	"description": "Adds useful debug features to your Electron app built with Vue.js",
 	"license": "MIT",
 	"repository": "ifrias-fuze/electron-debug",
 	"author": {

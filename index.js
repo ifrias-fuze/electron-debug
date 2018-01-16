@@ -67,20 +67,6 @@ const addDevtron = () => {
 	}
 };
 
-const addReactDevTools = () => {
-	try {
-		if (!isExtensionInstalled('electron-react-devtools')) {
-			const electronReactDevTools = require('electron-react-devtools');
-
-			if (electronReactDevTools) {
-				BrowserWindow.addDevToolsExtension(electronReactDevTools.path);
-			}
-		}
-	} catch (err) {
-		console.error(`Can't verify if react-dev-tools is already installed: ${err}`);
-	}
-};
-
 module.exports = opts => {
 	opts = Object.assign({
 		enabled: null,
@@ -99,7 +85,6 @@ module.exports = opts => {
 
 	app.on('ready', () => {
 		addDevtron();
-		addReactDevTools();
 
 		localShortcut.register('CmdOrCtrl+Shift+C', inspectElements);
 		localShortcut.register(isMacOS ? 'Cmd+Alt+I' : 'Ctrl+Shift+I', devTools);
